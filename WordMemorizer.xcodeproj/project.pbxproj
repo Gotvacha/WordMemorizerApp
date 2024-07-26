@@ -11,6 +11,13 @@
 		D8425ADB2C51D78B003D84D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8425ADA2C51D78B003D84D3 /* ContentView.swift */; };
 		D8425ADD2C51D78C003D84D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8425ADC2C51D78C003D84D3 /* Assets.xcassets */; };
 		D8425AE02C51D78C003D84D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8425ADF2C51D78C003D84D3 /* Preview Assets.xcassets */; };
+		D8425AE92C51D904003D84D3 /* WordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8425AE82C51D904003D84D3 /* WordDetailView.swift */; };
+		D8425AED2C51DA0D003D84D3 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8425AEC2C51DA0D003D84D3 /* Word.swift */; };
+		D8425AEF2C51DB60003D84D3 /* WordTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8425AEE2C51DB60003D84D3 /* WordTableView.swift */; };
+		D8425AF22C51DCA6003D84D3 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8425AF12C51DCA6003D84D3 /* Language.swift */; };
+		D89076492C53937200E59786 /* WordCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89076482C53937200E59786 /* WordCellViewModel.swift */; };
+		D890764B2C53A6DB00E59786 /* WordTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D890764A2C53A6DB00E59786 /* WordTableCellView.swift */; };
+		D890764D2C53B69300E59786 /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D890764C2C53B69200E59786 /* AddWordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		D8425ADA2C51D78B003D84D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D8425ADC2C51D78C003D84D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8425ADF2C51D78C003D84D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8425AE82C51D904003D84D3 /* WordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailView.swift; sourceTree = "<group>"; };
+		D8425AEC2C51DA0D003D84D3 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		D8425AEE2C51DB60003D84D3 /* WordTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableView.swift; sourceTree = "<group>"; };
+		D8425AF12C51DCA6003D84D3 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		D89076482C53937200E59786 /* WordCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCellViewModel.swift; sourceTree = "<group>"; };
+		D890764A2C53A6DB00E59786 /* WordTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableCellView.swift; sourceTree = "<group>"; };
+		D890764C2C53B69200E59786 /* AddWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,8 @@
 		D8425AD72C51D78B003D84D3 /* WordMemorizer */ = {
 			isa = PBXGroup;
 			children = (
+				D8425AF02C51DC6E003D84D3 /* Resources */,
+				D8425AE72C51D873003D84D3 /* Screens */,
 				D8425AD82C51D78B003D84D3 /* WordMemorizerApp.swift */,
 				D8425ADA2C51D78B003D84D3 /* ContentView.swift */,
 				D8425ADC2C51D78C003D84D3 /* Assets.xcassets */,
@@ -65,6 +81,59 @@
 				D8425ADF2C51D78C003D84D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8425AE62C51D801003D84D3 /* Words Table Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D89076472C53934200E59786 /* View Model */,
+				D8425AEB2C51D9F6003D84D3 /* Model */,
+				D8425AEA2C51D911003D84D3 /* Views */,
+			);
+			path = "Words Table Screen";
+			sourceTree = "<group>";
+		};
+		D8425AE72C51D873003D84D3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D8425AE62C51D801003D84D3 /* Words Table Screen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D8425AEA2C51D911003D84D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8425AE82C51D904003D84D3 /* WordDetailView.swift */,
+				D8425AEE2C51DB60003D84D3 /* WordTableView.swift */,
+				D890764A2C53A6DB00E59786 /* WordTableCellView.swift */,
+				D890764C2C53B69200E59786 /* AddWordView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8425AEB2C51D9F6003D84D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8425AEC2C51DA0D003D84D3 /* Word.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8425AF02C51DC6E003D84D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8425AF12C51DCA6003D84D3 /* Language.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D89076472C53934200E59786 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				D89076482C53937200E59786 /* WordCellViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +207,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8425ADB2C51D78B003D84D3 /* ContentView.swift in Sources */,
+				D890764B2C53A6DB00E59786 /* WordTableCellView.swift in Sources */,
+				D8425AED2C51DA0D003D84D3 /* Word.swift in Sources */,
+				D890764D2C53B69300E59786 /* AddWordView.swift in Sources */,
+				D8425AE92C51D904003D84D3 /* WordDetailView.swift in Sources */,
+				D8425AF22C51DCA6003D84D3 /* Language.swift in Sources */,
+				D89076492C53937200E59786 /* WordCellViewModel.swift in Sources */,
 				D8425AD92C51D78B003D84D3 /* WordMemorizerApp.swift in Sources */,
+				D8425AEF2C51DB60003D84D3 /* WordTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
